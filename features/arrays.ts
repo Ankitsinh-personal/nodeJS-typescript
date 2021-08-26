@@ -9,7 +9,7 @@ const array1 = [
 
 //help with inferences to etracting the value
 
-const car = cars[0];
+// const car = cars[0];
 const mycar = cars.pop()
 
 //prevent incompetabile value

@@ -12,5 +12,5 @@ const profile = {
 console.log(profile.name);
 
 //object distructuring
-const {age , name  } : { age: number ; name: string} = profile
-console.log(age,name);
+// const {age , name  } : { age: number ; name: string} = profile
+// console.log(age,name);
