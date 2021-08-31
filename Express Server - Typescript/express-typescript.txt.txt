@@ -1,0 +1,7 @@
+npm install express => install library
+but for typescfript we also install type definationn @types/express
+
+user file name start with capital letter => export class
+
+body parser =>middleware ->  parse form data to us
+not body parser => not body (req.body)
