@@ -1,0 +1,60 @@
+web framwork structure
+    model classes   => handle data, blog post, images, used to represent user
+    view classes    => handle html and event caused by user
+                    => like, clicks
+
+make interface property optional => ?
+interface name{
+    age?:number
+}
+
+define function type
+on(eventName: string , callback : () => void)
+    // callback : () => {}   // return object
+    // callback function have no argument and return void
+    // its a type annotations
+
+npm install json-server
+json-server -w db.json  //start the json server
+npm install axios
+
+"scripts": {
+    "start:db": "json-server -w db.json",
+    "start:parcel":"parcel index.html"
+  },
+
+run scripts => npm run start:db/parcel
+
+static method:::::::::
+A static class method is a method that belongs to the class itself, not the instance of a class. 
+That means we don't need an object to call a static class method. 
+We call them directly from the class itself.
+
+use nested prrperty => composition
+
+user.on()     =>    user.events.on()
+
+serialize => object to json => save- able format
+deserialize => json to object   => previously saved data
+
+typescript default behaviours => if not defined then type is undefined
+
+seperate sub module => composition type
+
+type assestion => overwrite the type using 'as' keyword
+
+uisng union operator => in generic => any variable have all unions type available
+but name have only string not number => use type assestion => name as string, like that
+
+
+<K extends keyof T>  => T object inside K property is also generic 
+
+when use get keyword => not calling function
+get fullname(){
+    return fname, lname
+}
+
+person.fullname()   // without get
+person.fullname     // with get
+
+not callin function but return references
